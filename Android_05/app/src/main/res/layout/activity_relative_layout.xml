@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+<<<<<<< HEAD
 <RelativeLayout
     android:id="@+id/activity_relative_layout"
     xmlns:android="http://schemas.android.com/apk/res/android"
@@ -18,17 +19,35 @@
         <!--android:layout_height="wrap_content"-->
         <!--android:text="1"/>-->
 
+=======
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.framgia.toandoan.RelativeLayoutActivity">
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="1"
+    android:id="@+id/text_first_number"/>
+>>>>>>> 33e6ff5e2b54c7c8e0015a7b0b7e2ca5d51a0b18
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
+<<<<<<< HEAD
         android:text="Dưới cùng tay phải"/>
 
+=======
+        android:text="Duoi cung ben phai"/>
+>>>>>>> 33e6ff5e2b54c7c8e0015a7b0b7e2ca5d51a0b18
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
+<<<<<<< HEAD
         android:text="Giữa màn hình"/>
 
     <TextView
@@ -61,4 +80,28 @@
         android:layout_height="wrap_content"
         android:text="Bên phải số 1"/>
 
+=======
+        android:text="Giua man hinh"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Duoi cung ben trai"
+        android:layout_alignParentBottom="true"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tren cung ben phai"
+        android:layout_alignParentRight="true"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Duoi so 1"
+        android:layout_below="@+id/text_first_number"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ben phai so 1"
+        android:layout_toRightOf="@+id/text_first_number"
+        />
+>>>>>>> 33e6ff5e2b54c7c8e0015a7b0b7e2ca5d51a0b18
 </RelativeLayout>
