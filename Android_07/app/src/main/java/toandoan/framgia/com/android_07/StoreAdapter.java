@@ -43,17 +43,20 @@ public class StoreAdapter extends RecyclerView.Adapter<StoreAdapter.ViewHolder> 
 
     // 1 tạo class view holder
     public class ViewHolder extends RecyclerView.ViewHolder {
-        private TextView mTextTitle;
+        private TextView mTextTitle1;
+        private TextView mTextTitle2;
         private ImageView mImageAvatar;
 
         public ViewHolder(View itemView) {
             super(itemView);
-            mTextTitle = (TextView) itemView.findViewById(R.id.text_title);
+            mTextTitle1 = (TextView) itemView.findViewById(R.id.text_title1);
+            mTextTitle2 = (TextView) itemView.findViewById(R.id.text_title2);
             mImageAvatar = (ImageView) itemView.findViewById(R.id.image_avatar);
         }
 
         public void bindData(AppItem item) {
-            mTextTitle.setText(item.getTitle());
+            mTextTitle1.setText(item.getTitle1());
+            mTextTitle2.setText(item.getTitle2());
             mImageAvatar.setImageResource(item.getImageResource());
         }
     }

@@ -3,35 +3,65 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:card_view="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:orientation="vertical"
-    card_view:cardCornerRadius="5dp">
+    card_view:cardCornerRadius="@dimen/dp_5">
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_2"
+        android:background="@drawable/card_selector"
+        android:clickable="true"
         android:orientation="horizontal"
         android:padding="@dimen/dp_5">
 
         <ImageView
             android:id="@+id/image_avatar"
-            android:layout_width="@dimen/dp_55"
-            android:layout_height="@dimen/dp_55"
-            android:src="@mipmap/ic_launcher"/>
+            android:layout_width="@dimen/dp_65"
+            android:layout_height="@dimen/dp_65"
+            android:src="@mipmap/ic_launcher" />
 
         <TextView
-            android:id="@+id/text_title"
-            android:layout_width="0dp"
+            android:id="@+id/text_title1"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            android:layout_weight="1"
-            android:paddingLeft="@dimen/dp_5"
+            android:layout_toRightOf="@+id/image_avatar"
+            android:paddingLeft="@dimen/dp_20"
             android:paddingRight="@dimen/dp_5"
-            android:text="Zalo nhắn gui yêu thương"/>
+            android:text="1.Zalo - Nhắn gửi yêu thuong"
+            android:textSize="@dimen/dp_18"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/text_title2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_title1"
+            android:layout_toRightOf="@+id/image_avatar"
+            android:paddingLeft="@dimen/dp_20"
+            android:paddingRight="@dimen/dp_5"
+            android:text="1.Zalo - Nhắn gửi yêu thuong"
+            android:textSize="@dimen/dp_15"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/text_title2"
+            android:textColor="#31a74f"
+            android:paddingLeft="@dimen/dp_10"
+            android:paddingRight="@dimen/dp_5"
+            android:textSize="@dimen/dp_12"
+            android:text="miễn phí"
+            android:textAllCaps="true"/>
 
         <ImageView
-            android:layout_width="@dimen/dp_5"
-            android:layout_height="@dimen/dp_20"
-            android:src="@mipmap/ic_launcher"/>
-    </LinearLayout>
+            android:layout_al
+            ignParentRight="true"
+            android:layout_width="@dimen/dp_25"
+            android:layout_height="@dimen/dp_25"
+            android:background="@drawable/dotsvertical"
+            android:clickable="true" />
+    </RelativeLayout>
 </android.support.v7.widget.CardView>
